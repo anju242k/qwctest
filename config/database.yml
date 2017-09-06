@@ -27,6 +27,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
+staging:
   <<: *default
-  database: db/production.sqlite3
+  adapter: sqlite3
+  database: db/qbapp.sqlite3
