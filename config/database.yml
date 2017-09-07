@@ -10,15 +10,17 @@ default: &default
   timeout: 5000
 
 development:
-  adapter: postgresql
-  encoding: utf8
-  reconnect: false
-  database: qbapp
-  pool: 35
-  username:  postgres
-  password:  postgres
-  host:  localhost
-  schema_search_path: "public,shared_extensions"
+  <<: *default
+  adapter: sqlite3
+  # encoding: utf8
+  # reconnect: false
+  # database: qbapp
+  # pool: 35
+  # username:  postgres
+  # password:  postgres
+  # host:  localhost
+  # schema_search_path: "public,shared_extensions"
+  database: db/qbapp.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
