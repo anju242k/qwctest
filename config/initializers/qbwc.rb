@@ -35,7 +35,7 @@ QBWC.configure do |c|
   c.storage = :active_record
   
   # Support URL shown in QuickBooks Web Connector. nil will use root path of the app.
-  c.support_site_url = nil
+  c.support_site_url = "https://52.15.128.252:3008/qbwc/support"
   
   # Unique user GUID. If you want access by multiple users to the same file, you will need to modify this in the generated QWC file.
   c.owner_id = '{57F3B9B1-86F1-4fcc-B1EE-566DE1813D20}'
